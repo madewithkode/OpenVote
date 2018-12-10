@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		<title>OpenVote &mdash; Powerful e-Voting platform</title>
+		<meta name="description" content="Free Bootstrap 4 Template by uicookies.com">
+		<meta name="keywords" content="Free website templates, Free bootstrap themes, Free template, Free bootstrap, Free website template">
+    
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text:400,400i,600|Montserrat:200,300,400" rel="stylesheet">
+
+		<link rel="stylesheet" href="static/css/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="static/fonts/ionicons/css/ionicons.min.css">
+    <link rel="stylesheet" href="static/fonts/law-icons/font/flaticon.css">
+
+    <link rel="stylesheet" href="static/fonts/fontawesome/css/font-awesome.min.css">
+    
+    
+    <link rel="stylesheet" href="static/css/slick.css">
+    <link rel="stylesheet" href="static/css/slick-theme.css">
+
+    <link rel="stylesheet" href="static/css/helpers.css">
+    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" href="static/css/landing-2.css">
+	</head>
+	<body data-spy="scroll" data-target="#pb-navbar" data-offset="200">
+
+    <nav class="navbar navbar-expand-lg navbar-dark pb_navbar pb_scrolled-light" style="background-color: #114111;" id="pb-navbar">
+      <div class="container">
+        <a class="navbar-brand" href="/">OpenVote <span class="text-uppercase pb_font-15 mb-2 title-color pb_letter-spacing-2 text-center"><strong> enroll</strong></span></a>
+        <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#probootstrap-navbar" aria-controls="probootstrap-navbar" aria-expanded="false" aria-label="Toggle navigation">
+          <span><i class="ion-navicon"></i></span>
+        </button>
+        <div class="collapse navbar-collapse" id="probootstrap-navbar">
+          <ul class="navbar-nav ml-auto">
+              <li class="nav-item cta-btn ml-xl-2 ml-lg-2 ml-md-0 ml-sm-0 ml-0"><a class="nav-link" href="/#" ><span class="pb_rounded-4 px-4">Admin ID: {{session['password'] }}</span></a></li>
+            <li class="nav-item cta-btn ml-xl-2 ml-lg-2 ml-md-0 ml-sm-0 ml-0"><a class="nav-link" href="/voting-portal" ><span class="pb_rounded-4 px-4">Voting Portal</span></a></li>
+            <li class="nav-item cta-btn ml-xl-2 ml-lg-2 ml-md-0 ml-sm-0 ml-0"><a class="nav-link" href="/admin-logout"><span class="pb_rounded-4 px-4">End Enrollment</span></a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- END nav -->
+
+  <section class="pb_section" id="section-pricing" style="background-color: #4d9710;">
+    <div class="container">
+      <div class="row mb-5">
+          <div class="col-md-12 mb-5">
+            <h5 class="text-uppercase pb_font-15 mb-2 pb_color-dark-opacity-3 pb_letter-spacing-2 text-center"><strong>Candidate Successfully Enrolled</strong></h5>
+            <h2 class="text-center">{{firstName}}, Here Are Your Candidate Credentials</h2>
+          </div>
+      </div>
+      <div class="row">
+        <div class="col-md">
+          <div class="pb_pricing_v1 p-5 border border-primary text-center bg-white">
+            <h3>Candidate ID</h3>
+            <span class="price">{{ uniqueID }}</span>
+            <p class="pb_font-15">Ensure to take note of your unique ID as this would be a key requirement to accessing the voting portal on election day </p>
+            <p class="mb-0"><a href="#" role="button" class="btn btn-primary btn-shadow-blue">Copy to clipboard</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container text-center">
+        <p class="mb-0"><a href="/enroll-voter" class="btn btn-primary  btn-lg btn-block pb_btn-pill btn-shadow-blue">Enroll Next Candidate</a></p>
+    </div>
+  </section>
+  <!-- ENDs ection -->
+  <footer class="pb_footer bg-light" role="contentinfo">
+        <div class="container">
+          <div class="row text-center">
+            <div class="col">
+              <ul class="list-inline">
+                <li class="list-inline-item"><a href="#" class="p-2"><i class="fa fa-facebook"></i></a></li>
+                <li class="list-inline-item"><a href="#" class="p-2"><i class="fa fa-twitter"></i></a></li>
+                <li class="list-inline-item"><a href="#" class="p-2"><i class="fa fa-linkedin"></i></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col text-center">
+              <p class="pb_font-14">&copy; 2017 <a href="#">OpenVote</a> Amazing e-Voting Platform. All Rights Reserved. <br> Designed &amp; Developed by <a href="#">Madewithkode</a></p>
+              <p class="pb_font-14">Demo Images: <a href="https://unsplash.com/" target="_blank" rel="nofollow">Unsplash</a></p>
+            </div>
+          </div>
+        </div>
+      </footer>
+  
+      <!-- loader -->
+      <div id="pb_loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#1d82ff"/></svg></div>
+  
+  
+  
+    <script src="static/js/jquery.min.js"></script>
+    <script src="static/js/slick.min.js"></script>
+    <script src="static/js/popper.min.js"></script>
+    
+    <script src="static/js/bootstrap.min.js"></script>
+  
+    <script src="static/js/main.js"></script>
+  
+      </body>
+  </html>
